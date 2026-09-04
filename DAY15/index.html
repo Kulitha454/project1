@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+
+    <style>
+/* css font */
+@import url('https://fonts.googleapis.com/css2?family=Carlito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+
+    @font-face {
+            font-family: 'Ancona Heavy';
+            src: url(fonts/Ancona\ Cd\ Heavy\ Regular.ttf);
+
+    }
+
+    @font-face {
+        font-family: "Ancona Narrow";
+        src: url(fonts/Ancona-Narrow\ Regular.ttf);
+    }
+
+    @font-face {
+        font-family: "Aargua Bold";
+        src: url(fonts/text.txt.ttf);
+    }
+        :root{
+            --subheading: 'Ancona Heavy';
+            --heading:  'Carlito', sans-serif;
+            --meetTheTeem: "Ancona Narrow";
+            --getInTouch:"Aargua Bold";
+        }
+
+        /* common */
+
+        *{margin: 0;
+          padding: 0;}
+
+        .wrapper{
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1{
+            font-family: var(--heading);
+            font-size: 50px;
+            color: #ed7218;
+        }
+        p{
+            font-size: 18px;
+            color: #070707; 
+            font-style: italic; 
+            font-family: var(--heading);  
+        }
+
+        /* header */
+
+        #header{
+            background: white;
+        }
+        #headercontainer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #menubar{
+            display: flex;
+            align-items: center;
+            margin-left: 180px;
+        }
+        #menubar>a{
+            text-decoration: 0;
+            font-size: 26px;
+            text-transform: uppercase;
+            margin: 0 10px;
+            font-family:var(--heading);
+            color: #040404;
+            font-weight: 400;
+        }
+        #menubar>span::after{
+            content: "|";
+            margin: 0 10px;
+            color: black;
+            font-weight: bo;
+        }
+        #menubar>a:hover, .active{
+            color: #ed7218 !important;
+            border-bottom: 3px solid #ed7218;
+        }
+
+        /* main section */
+
+        #mainsec{
+            background: #e0e5eb;
+            padding-bottom: 50px;
+        }
+        #maintop{
+            display: flex;
+            justify-content: center;
+        }
+        #maintopleft, #maintopright{
+            width: 50%;
+        }
+        #maintopright{
+            margin: 125px 0 0 70px;
+        }
+        #maintitle{
+            font-family: var(--heading);
+        }
+        #twopeople{
+            height: 100%;
+        }
+        .mainpara{
+            font-style: italic;
+            font-weight: bold;
+            margin-top: 35px;
+            margin-bottom: 80px;
+        }
+        .readmore{
+            font-family: var(--heading);
+            text-transform: uppercase;
+            font-size: 18px;
+            background: #ed7218;
+            color: #e0e5eb;
+            text-decoration: 0;
+            padding: 10px 24px 10px 32px;
+            letter-spacing: 3px;
+            font-weight: 300;
+            
+        }
+        #mainbottom{
+            display: flex;
+            width: 100%;
+            margin-left: 20px;
+        }
+
+        .firstimg{
+            width: 50px;
+            margin: auto;
+            display: block;
+            padding-top: 21px;
+        }
+        .cardimg{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border-radius: 180px;
+            margin: auto;
+            display: block;
+        }
+        .bottomtext{
+            margin: 20px 0;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 4px;
+            font-family: var(--heading);
+            color: white;
+            font-weight: normal;
+        }
+        .bottomtext1{
+            color: white;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .more{
+            font-family: var(--heading);
+            font-size: 24px;
+            text-transform: uppercase;
+            color: black;
+            text-decoration: 0;
+            background: white;
+            padding: 5px 28px 5px 28px;
+            margin-left: 100px;
+        }
+        #card1{background: #ed7218;}
+        #card2{background: #f48024;}
+        #card3{background: #f9ac44;}
+        .card{padding: 20px 30px 40px 30px;}
+
+
+        #sec2head{
+            font-family: var(--meetTheTeem);
+            font-size: 90px;
+            margin-top: 20px;
+        }
+        #sec2head2{
+            color: #040404 ;
+        }
+        #sec2top{
+            margin-bottom: 40px;
+        }
+        #sec2para{
+            margin-right: 360px;
+            margin-bottom: 60px;
+        }
+      
+        #boy, #girl{
+            margin-right: 30px;
+        }
+        #orangeBg{
+            width: 1200px;
+            height: 330px;
+            background: #f48024;
+            margin-top: -270px;
+        }
+
+/* section 3 */
+        #sec3{
+            background: #e0e5eb;
+        }
+        #sec3container{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 70px;
+        }
+        #sec3left{
+            margin-top: 70px;
+        }
+        #sec3Heading{
+            text-transform: uppercase;
+            font-size: 24px;
+            font-family: var(--heading);
+            margin-bottom: 10px;
+        }
+        #sec3subheading{
+           font-family: var(--meetTheTeem);
+           font-size: 70px;
+           line-height: 0.9;
+           border-bottom: 8px solid #ed7218;
+           width: 180px;
+           padding-bottom: 20px;
+        }
+       #sec3LeftPara{
+        margin-top: 20px;
+        color: #8c8d8e;
+        font-size: 24px;
+       }
+
+       #sec3irght{
+        width: 50%;
+       }
+
+       .sec3rightpara{
+        margin-top: 70px;
+       }
+       #sec3rightpara1{
+        margin-bottom: 30px;
+       }
+       #learnmore{
+        margin-top: 50px;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #e0e5eb;
+        font-family: var(--heading);
+        font-weight: lighter;
+        text-decoration: 0;
+        background:#f48024;
+        padding: 10px 25px 10px 25px;
+       }
+/* how we work */
+       #howWeWork{
+        margin-bottom: 30px;
+       }
+       #workheader{
+        margin-top: 70px;
+       }
+       #workpara{
+        margin:20px 440px 20px 0;
+       }
+       #workimageset{
+       display: flex;
+       flex-wrap: wrap;
+       z-index: -100;
+       }
+       .workimg{
+        padding: 20px;
+       }
+       #image4{
+        height: 340px;
+        width: 320px;
+       }
+       #image6{
+        margin-top: -370px;
+       }
+       #mainorangediv{
+        display: flex;
+        background: #f48024;
+        width: 100%;
+        height: 350px;
+        z-index: -300;
+        margin-top: -880px;
+        position: absolute;
+       }
+       #whitediv{
+        background: white;
+        width: 13%;
+        height: 350px;
+       }
+
+/* build */
+
+       #build{
+        background: linear-gradient(180deg, #e0e5eb 450px, #f48024 200px);
+       }
+
+       #buildimg{
+        padding-top: 50px;
+       }
+       #eng-archi{
+        margin: auto;
+        display: block;
+        position: relative;
+       }
+       #buildblank{
+        background: white;
+        width: 40%;
+        padding: 15px 20px 62px 20px;
+        position: relative;
+        margin-top: -145px;
+        margin-left: 585px;
+        top: -50px;
+       }
+       #buildheader{
+        font-size: 40px;
+        font-weight: bold;
+        font-family: var(--subheading);
+        padding-bottom: 20px;
+       }
+       #buildpara{
+        padding-bottom: 50px;
+       }
+/* section 6 */
+    #sec6container{
+        padding-bottom: 70px;
+    }
+    #sec6para{
+        padding: 100px 180px 100px 190px ;
+        text-align: center;
+        font-size: 28px;
+        color: #8c8d8e;
+    }
+    #sec6readmore{
+        margin-left:515px;
+    }
+
+/* section seven */
+
+    #secSeven{
+        background: #f48024;
+        padding-bottom: 40px;
+    }
+    #sec7top{
+        display: flex;
+        padding-top: 50px;
+        justify-content: space-between;
+    }
+    #sec7heading{
+        color: white;
+        font-size: 50px;
+        font-family: var(--meetTheTeem);
+        margin: 50px 0 100px 128px;
+    }
+    #sec7topRight{
+        margin-top: 45px;
+        margin-right: 70px;
+    }
+    #sec7centerimg{
+        position: relative;
+        margin-top: -70px;
+        margin-left: 125px;
+    }
+    #sec7bottomcard{
+        background: white;
+        width: 30%;
+        padding: 20px 35px 50px 20px;
+        position: relative;
+        margin-top: -150px;
+        margin-left: 720px;
+    }
+    #sec7bottomheading{
+        font-size: 32px;
+        color: black;
+        font-family: var(--subheading);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    #sec7bottompara{
+        margin-bottom: 50px;
+    }
+    /*  */
+    #finalsec{
+        background: #292d33;
+    }
+    #finalsecdiv{
+        padding-bottom: 80px;
+    }
+    #finalheading{
+        font-family: var(--getInTouch);
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    #finalsubheading{
+        color: white;
+        text-align: center;
+        font-family: var(--heading);
+        font-weight: normal;
+    }
+    #finaltopdiv{
+        width: 80%;
+        height: 300px;
+        background: #f48024;
+        position: relative;
+        margin-top: 150px;
+        margin-left: 128px;
+    }
+    #finalsecform{
+        margin: auto;
+        display: block;
+        background: #f6f6f6;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        padding-bottom: 20px;
+        width: 70%;
+        position: relative;
+        margin-top: -400px;
+    }
+    .fianlimageset{
+        padding-bottom: 24px;
+    }
+    #fianlimageset1{
+        padding-bottom: 0;
+    }
+    #location, #call, #clock{
+        width: 50px;
+    }
+    .finalformpara{
+        font-style: normal;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.5;
+        margin-left: 7px;
+    }
+
+    #finalsecformright{
+        flex-direction: column;
+    }
+    #fianlform{
+        display: block;
+        flex-direction: column;
+    }
+    .formitem{
+        width: 500px;
+        height: 50px;
+        margin: 0 0 20px 20px;
+        padding-left: 20px;
+        font-family: var(--heading);
+        border: 1px solid #919191;
+        background: #f6f6f6;
+    }
+    #formitem1{
+        height: 200px;
+        padding-top: 20px;
+        margin-bottom: 30px;
+    }
+    #finalsubmit{
+        margin-left: 20px;
+    }
+    .socailmediaicons{
+        margin: auto;
+        display: block;
+        padding-bottom: 30px;
+    }
+/* footer */
+    footer{
+        background: #333333;
+    }
+    #footerpara{
+        text-align: center;
+        color: #8f8f8f;
+        font-style: normal;
+        font-size: 16px;
+        padding: 20px 0 20px 0;
+    }
+
+
+   @media screen and (max-width:1200px){
+    .wrapper{
+        width: 1200px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+   }
+   @media screen and (max-width:750px){
+        #menubar{
+            margin-left: 15px;
+        }
+   }
+   @media screen and  (max-width:600px){
+    #menubar>a{
+        display: block;
+    }
+    #menubar>span::after{
+        content: "";
+    }
+   }
+    </style>
+</head>
+<body>
+
+    <!-- header -->
+
+        <header id="header">
+            <div id="headercontainer" class="wrapper">
+                <img src="images/logo.png" alt="logo" id="logo">
+
+                <nav id="menubar">
+                    <a href="#"id="home" class="active"><strong>home</strong></a><span></span>
+                    <a href="#" id="aboutus"><strong>about us</strong></a><span></span>
+                    <a href="#" id="ourproject"><strong>our project</strong></a><span></span>
+                    <a href="#" id="contactus"><strong>contact us</strong></a>
+                </nav>
+
+                <img src="images/icons/menu.svg" alt="menu" id="menuicon">
+            </div>
+        </header>
+
+        <section id="mainsec">
+            
+            <div class="wrapper" id="maincontainer">
+                <div id="maintop">
+                    <div id="maintopleft">
+                        <img src="images/checking-blueprint.png" alt="twopeople" id="twopeople">
+                    </div>
+
+                    <div id="maintopright">
+                        <h1 id="maintitle"><strong>Architecture,<br>Engineering & <br>Design Firm</strong></h1>
+                        <p class="mainpara">We are the authority for completing construction projects in<br> environmentally sensitive serroundigs</p>
+                        <a href="#" class="readmore">read more</a>
+                    </div>
+                </div>
+
+                <div id="mainbottom">
+                    <div class="card" id="card1">
+                        <div class="cardimg"><img src="images/icons/graph.svg" alt="graph" id="graph" class="firstimg"></div>
+                        <h2 class="bottomtext">analysis</h2>
+                        <p class="bottomtext1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae officia velit, ea deleniti debitis distinctio!</p>
+                        <a href="#" class="more">more</a>
+                    </div>
+
+                    <div class="card" id="card2">
+                        <div class="cardimg"><img src="images/icons/plan.svg" alt="plan" id="plan" class="firstimg"></div>
+                        <h2 class="bottomtext">planing</h2>
+                        <p class="bottomtext1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae officia velit, ea deleniti debitis distinctio!</p>
+                        <a href="#" class="more">more</a>
+                    </div>
+
+                    <div class="card" id="card3">
+                        <div class="cardimg"><img src="images/icons/tablet.svg" alt="tablet" id="tablet" class="firstimg"></div>
+                        <h2 class="bottomtext">design</h2>
+                        <p class="bottomtext1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae officia velit, ea deleniti debitis distinctio!</p>
+                        <a href="#" class="more">more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- section2 -->
+
+        <section id="sec2">
+            <div class="wrapper" id="sec2container">
+             <div id="sec2top">
+                <h1 id="sec2head"><span id="sec2head2">Meet the </span>team</h1>
+                <p id="sec2para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur perspiciatis cum aliquid ab. Incidunt fuga, dolorum dicta inventore saepe ullam. Saepe soluta deserunt consectetur modi illo ratione nulla, commodi blanditiis assumenda dolorum sed dolorem veritatis vel culpa id voluptatibus animi!</p>
+            </div>
+        
+                <div id="sec2img">
+                    <img src="images/boy.png" alt="boy" id="boy">
+                    <img src="images/girl.png" alt="girl" id="girl">
+                </div>
+            </div>
+
+            <div id="orangeBg"></div>
+        </section>
+
+<!-- seection3 -->
+
+        <section id="sec3">
+            <div class="wrapper" id="sec3container">
+                <div id="sec3left">
+                    <h1 id="sec3Heading">welcome to</h1>
+                    <h2 id="sec3subheading">Construction <br> Company <span></span> </h2>
+                    <p id="sec3LeftPara">We are the authority for completing construction <br> projects in environmentally</p>        
+                </div>
+
+                <div id="sec3irght">
+                    <p class="sec3rightpara">Lorem, ipsum dolor Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iste dolore voluptatum quod fugiat illum architecto eligendi animi laboriosam necessitatibus aut perferendis ipsa similique cupiditate nulla odit sed nobis autem neque, quibusdam voluptatem. Beatae officiis quaerat soluta harum, tempore, minima aliquam, eos reprehenderit perspiciatis incidunt commodi impedit ipsam ea architecto nam earum assumenda. Odit, aut unde. Aut nemo voluptatem officia maiores, maxime ut asperiores cum quos repellat! Obcaecati, suscipit incidunt eum hic, nihil pariatur itaque veniam, error architecto quo libero illum porro ab iure repellat </p>
+                    <p class="sec3rightpara" id="sec3rightpara1">Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores minima consequuntur at repudiandae assumenda minus culpa dolorum? Nam facilis possimus fugiat. Rerum ducimus commodi excepturi molestias doloribus quisquam voluptatem iusto qui saepe fuga. Alias, vel.</p>
+
+                    <a href="#" class="readmore">lern more</a>
+                </div>
+            </div>
+        </section>
+
+<!-- how we work -->
+
+        <section id="howWeWork">
+            <div class="wrapper" id="workcontainer">
+                <h1 id="workheader">How We Work</h1>
+                <p id="workpara">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here, that a reader will be distracted by the readable content of a page</p>
+
+                <div id="workimageset">
+                    <img src="images/building1.png" alt="building1" id="image1" class="workimg">
+                    <img src="images/building2.png" alt="building2" id="image2" class="workimg">
+                    <img src="images/site-girl.png" alt="sitegirl" id="image3" class="workimg">
+                    <img src="images/building3.png" alt="building3" id="image4" class="workimg">
+                    <img src="images/engineer.png" alt="engineer" id="image5" class="workimg">
+                    <img src="images/building4.png" alt="building4" id="image6" class="workimg">
+                </div>
+            </div>
+
+            <div id="mainorangediv">
+                <div id="whitediv"></div>
+                
+            </div>
+        </section>
+
+<!-- build with us -->
+
+        <section id="build">
+            <div class="wrapper" id="bulidcontainer">
+                <div id="buildimg">
+                    <img src="images/engineer-architect.jpg" alt="ang-archi" id="eng-archi">
+                </div>
+
+                <div id="buildblank">
+                    <h1 id="buildheader">Build With US</h1>
+                    <p id="buildpara">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni nostrum vero delectus quisquam numquam sit? Ipsum harum nihil illum ex laudantium ea recusandae ipsa  </p>
+                    <a href="#" class="readmore">Contact Us</a>
+                </div>
+            </div>
+        </section>
+
+<!-- section6 -->
+
+        <section id="sec6">
+            <div class="wrapper" id="sec6container">
+                <p id="sec6para">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to We are the authority for completing construction projects in environmentally</p>
+                <a href="#" class="readmore" id="sec6readmore">learn more</a>
+            </div>
+        </section>
+
+<!-- section7 -->
+
+        <section id="secSeven">
+            <div class="wrapper" id="sec7container">
+
+                <div id="sec7top">
+                    <div id="sec7left">
+                            <h1 id="sec7heading">Expert,Efficient<br> Collabarative. <br>Build With Experince</h1>
+                    </div>
+
+                    <div id="sec7topRight">
+                        <img src="images/house.jpg" alt="house" id="sec7topimg">
+                    </div>
+                </div>
+
+                <div id="sec7centerimg">
+                    <img src="images/business-people-meeting.jpg" alt="business-people-meeting" id="centerimg">
+                </div>
+
+                <div id="sec7bottomcard">
+                    <h2 id="sec7bottomheading">our vision</h2>
+                    <p id="sec7bottompara">It is a long istabished fact that a reader will be distracted by the readble content of a page when looking at its layout</p>
+                    <a href="#" class="readmore" id="sec7bottomlink">learn more</a>
+                </div>
+            </div>
+        </section>
+
+<!-- final section -->
+        <section id="finalsec">
+            <div class="wrapper" id="finalcontainer">
+                <h1 id="finalheading">Get in Touch!</h1>
+                    <h2 id="finalsubheading">we are looking forward to start a project with you </h2>
+                
+                <div id="finalsecdiv">
+                    <div id="finaltopdiv"></div>
+
+                    <div id="finalsecform">
+
+                        <div id="finalsecformleft">
+                            <div class="fianlimageset">
+                                <img src="images/icons/location.png" alt="location" id="location">
+                                <p class="finalformpara">121 Rock Street,21 Avenue,New York, <br>NY 92103-90000</p>
+                            </div>
+
+                            <div class="fianlimageset">
+                                <img src="images/icons/call.png" alt="call" id="call">
+                                <p class="finalformpara">1 (234) 567-891</p>
+                                <p class="finalformpara">1 (234) 987-654</p>
+                            </div>
+
+                            <div class="fianlimageset" id="fianlimageset1">
+                                <img src="images/icons/clock.png" alt="clock" id="clock">
+                                <p class="finalformpara">Mon-fri .......10 am - 6 pm<br> Sat, Sun ..... Closed</p>
+                            </div>
+                        </div>
+
+                        <div id="finalsecformright">
+                            <form id="fianlform">
+                                <input type="text" class="formitem" placeholder="Enter Your Name"><br>
+                                <input type="text" class="formitem" placeholder="Enter a valid E-mail Address"><br>
+                                <textarea id="formitem1"class="formitem" placeholder="Enter Your Massege"></textarea>
+                            </form>
+                            <a href="#" class="readmore" id="finalsubmit">submit</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="socailmedialinks">
+                    <img src="images/icons/fb.png" alt="fb" class="socailmediaicons">
+                </div>
+            </div>
+        </section>
+
+<!-- footer -->
+
+        <footer>
+            <div class="wrapper">
+                <p id="footerpara">All Rights reserved (c) webclass 2022</p>
+            </div>
+        </footer>
+</body>
+</html>
+
+
+
+
